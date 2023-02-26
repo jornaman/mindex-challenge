@@ -60,4 +60,11 @@ public class Employee {
     public void setDirectReports(List<Employee> directReports) {
         this.directReports = directReports;
     }
+
+    public String toString() {
+        StringBuffer buf = new StringBuffer();
+        buf.append("\nEmployee id: " + getEmployeeId() + " name: " + getFirstName() + " " + getLastName());
+        buf.append("\n position: " + getPosition() + " dept: " + getDepartment() + "\n");
+        return buf.toString();
+    }
 }
